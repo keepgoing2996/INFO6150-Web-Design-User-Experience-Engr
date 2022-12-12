@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script defer src="site.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a class="skiplink" href="#main">Skip To Content</a>
+      <a class="hero" href="index.html">
+        <img src="img/logo.png" alt=""> 
+     </a>
+             
+      <title>Homepage</title>    
+      <h1>Famous Internet Rabbits</h1>  
+      <nav class="globalnav">
+        <button type="button" class="globalnav__title" aria-label="menu" >☰</button>
+        <!-- <i type="button" class="globalnav__title gg-menu"></i> -->
+        <ul class="globalnav__menu">
+          <li><a href="index.html" class="globalnav__text">Home</a></li>
+          <li><a href="cats.html" class="globalnav__text">Famous Rabbits</a></li>
+          <li><a href="events.html" class="globalnav__text">Rabbit Events</a></li>
+        </ul> 
+      </nav>
+      
+    </header>
+    
+    <main>
+      <div>
+        <div id="root_cats">
+          <div class="card" id="rabbit1">
+            <h2 class="card__title">Rabbit 1 Double Gray</h2>
+            <img class="card__pic" src="img/rabbit0.png" alt="Rabbit 1 Double Gray">
+            <div>
+              <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, iure dignissimos adipisci alias aperiam quis in iste, assumenda similique rem quaerat libero consequatur reiciendis maiores modi aspernatur quam illo hic dolore qui ipsum perspiciatis? Obcaecati sequi, hic, perferendis quaerat rerum tempora cupiditate asperiores ea, inventore sint libero doloribus mollitia sed!</p>
+              <p>Ipsum lore sit 
+                <button class="card__link open">Subscribe</button>
+                voluptate inventore.
+              </p>
+            </div>
+          </div>
+          <div class="card" id="rabbit2">
+            <h2 class="card__title">Rabbit 2 Dazai</h2>
+            <img class="card__pic" src="img/rabbit1.png" alt="Rabbit 2 Dazai">
+            <div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet suscipit odit officiis similique, voluptate expedita ipsam ipsa perferendis, molestiae aliquid id excepturi? Veniam, expedita iusto.</p>
+              <p>Ipsum lore sit 
+                <button type="button" class="card__link open">Subscribe</button>
+                voluptate inventore.
+              </p>
+            </div>
+          </div>
+          <div class="card" id="rabbit3">
+            <h2 class="card__title">Rabbit 3 Xiaozai</h2>
+            <img class="card__pic" src="img/rabbit2.png" alt="Rabbit 3 Xiaozai">
+            <div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab architecto eius vel eum asperiores rem minima nulla explicabo dolorum error, eos pariatur officiis, fugit veritatis expedita reiciendis facilis ex. Eveniet illum ipsam voluptas explicabo eius quam et quae necessitatibus. Recusandae officia aspernatur ullam suscipit ab, assumenda sunt saepe adipisci placeat quaerat unde facere reiciendis, odit iusto odio facilis provident nam amet tenetur repellendus voluptatem porro? Optio deserunt magnam ratione eaque.</p>
+              <p>Ipsum lore sit 
+                <button type="button" class="card__link open">Subscribe</button>
+                voluptate inventore.
+              </p>
+            </div>
+          </div>
+          <div class="card" id="rabbit4">
+            <h2 class="card__title">Rabbit Tom</h2>
+            <img class="card__pic" src="https://source.unsplash.com/302xfiIGOfE" alt="Rabbit Tom">
+            <div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, iure dignissimos adipisci alias aperiam quis in iste, assumenda similique rem quaerat libero consequatur reiciendis maiores modi aspernatur quam illo hic dolore qui ipsum perspiciatis? Obcaecati sequi, hic, perferendis quaerat rerum tempora cupiditate asperiores ea, inventore sint libero doloribus mollitia sed!</p>
+              <p>Ipsum lore sit 
+                <button type="button" class="card__link open">Subscribe</button>
+                voluptate inventore.
+              </p>
+            </div>
+          </div>
+          <div class="card" id="rabbit5">
+            <h2 class="card__title">Rabbit Jason</h2>
+            <img class="card__pic" src="https://source.unsplash.com/u_kMWN-BWyU" alt="Rabbit Jason">
+            <div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet suscipit odit officiis similique, voluptate expedita ipsam ipsa perferendis, molestiae aliquid id excepturi? Veniam, expedita iusto.</p>
+              <p>Ipsum lore sit
+                <button type="button" class="card__link open">Subscribe</button>
+                voluptate inventore.
+              </p>
+            </div>
+          </div>
+          <div class="card" id="rabbit6">
+            <h2 class="card__title">Rabbit Mike</h2>
+            <img class="card__pic" src="https://source.unsplash.com/IFnknR2Mv5o" alt="Rabbit Mike">
+            <div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab architecto eius vel eum asperiores rem minima nulla explicabo dolorum error, eos pariatur officiis, fugit veritatis expedita reiciendis facilis ex. Eveniet illum ipsam voluptas explicabo eius quam et quae necessitatibus. Recusandae officia aspernatur ullam suscipit ab, assumenda sunt saepe adipisci placeat quaerat unde facere reiciendis, odit iusto odio facilis provident nam amet tenetur repellendus voluptatem porro? Optio deserunt magnam ratione eaque.</p>
+              <p>Ipsum lore sit 
+                <button type="button" class="card__link open">Subscribe</button>
+                voluptate inventore.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <dialog class="modal">
+          <h2>Subscribe to the Latest Mews!</h2>
+          <form class="register" action="/subscribe", method = "POST">
+            
+            <label class="register-email">
+              <span class="register-email__label">Email: * <i>required</i></span>
+              <input name="email" class="register-email__input"/>
+              <span class="register-email__error1">This field is required</span>
+              <span class="register-email__error2">This field be a valid email address including a @</span>
+            </label>
+            <label class="register-confirm">
+              <span class="register-confirm__label">Confirm Email: *  <i>required</i></span>
+              <input name="register-confirm" class="register-confirm__input"/>
+              <span class="register-confirm__error">This field must match the provided email address</span>
+            </label>
+            <div class="register-button">
+              <button type="register-submit" class="register">Subscribe</button>
+              <button class="close" type="button">Cancel</button>
+            </div>     
+          </form>
+      </dialog>
+    </main>
+    <footer>
+      <nav class="footernav">
+        <ul class="footernav__menu">
+          <li class="footernavv__item"><a href="policy.html">Privacy Policy</a></li>
+          <li class="footernavv__item"><a href="work.html">Work for Us</a></li>
+          <li class="footernavv__item"><a href="contact.html">Contact Us</a></li>
+          <li class="footernavv__item"><a href="media.html">Social Media</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
+

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <a class="hero" href="index.html">
+        <img src="img/logo.png" alt=""> 
+     </a>       
+      <title>Registration</title>    
+      <h1>Registration</h1>  
+      <nav class="globalnav">
+        <ul class="globalnav__menu">
+          <li>
+            <button type="button">Navigte</button>
+            <nav>
+              <ul class="globalnav__menu__submenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="register.html">Register</a></li>
+              </ul>
+            </nav>
+          </li>
+          <li>
+            <button type="button">Contact</button>
+            <nav>
+              <ul class="globalnav__menu__submenu">
+                <li><a href="#">Phone</a></li>
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Address</a></li>
+              </ul>
+            </nav>
+          </li>
+        </ul>
+      </nav>
+      
+    </header>
+    
+    <main>
+      <div id="root_register">
+        <form action="/some/url", method = "POST">
+            <label>
+              <span>Name * </span>
+              <input name="name" placeholder="Must Fill" required />
+            </label>
+            <label>
+              <span>Email * </span>
+              <input name="email" placeholder="Must Fill" required />
+            </label>
+            <label>
+              <span>Do you want us to send you updated emails?</span>
+              <input id="update" name="update_me" type="checkbox" checked/>
+            </label>
+            <label>
+              <span>Rabbit Breed *</span>
+              <select name="breed" placeholder="Must Fill" required />
+                <option value="">Please select</option>
+                <option value="1">Holland Lop</option>
+                <option value="2">Dutch</option>
+                <option value="3">Mini Lop </option>
+                <option value="4">Other </option>
+              </select>
+            </label>
+
+            <button type = "submit">Register</button>
+            <!-- <input nam  e="text"> -->
+        </form>
+      </div>
+    </main>
+    <footer>
+      We really don't care about your privacy, see our <a href="#">Privacy Policy</a>
+    </footer>
+  </body>
+</html>
+

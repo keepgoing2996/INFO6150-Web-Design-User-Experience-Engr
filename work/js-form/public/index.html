@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script defer src="site.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Register Account</h1>
+    </header>
+    
+    <main>
+      <div id="root">
+        <form class="register" action="/some/url", method = "POST">
+            <label class="register-name">
+              <span class="register-name__label">Name * </span>
+              <span class="register-name__error">This Name field is required *</span>
+              <input name="name" class="register-name__input" placeholder="Must Fill" />
+            </label>
+            <label class="register-email">
+              <span class="register-email__label">Email *</span>
+              <input name="email" class="register-email__input" placeholder="Must Fill" />
+            </label>
+            <label class="register-confirm">
+              <span class="register-comfirm__label">Confirm Email *</span>
+              <input name="register-confirm" class="register-confirm__input" placeholder="Must Fill" />
+            </label>
+            <label class="register-spam">
+              <span class="register-spam__label">Do you want spam email?</span>
+              <input id="spam" name="wants-spam" class="register-spam__input" type="checkbox" checked/>
+            </label>
+            <label class="register-tier">
+              <span class="register-tier__label">Tier *</span>
+              <select name="tier" class="register-tier__input" placeholder="Must Fill" />
+                <option value="">Please select</option>
+                <option value="1">Silver Tier</option>
+                <option value="2">Gold Tier</option>
+                <option value="3">Platinum Tier</option>
+              </select>
+            </label>
+
+            <button type = "register-submit">Register</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      We really don't care about your privacy, see our <a href="#">Privacy Policy</a>
+    </footer>
+  </body>
+</html>
+

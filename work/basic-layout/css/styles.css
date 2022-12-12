@@ -1,0 +1,77 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html body {
+    /* font-family: sans-serif; */
+}
+.menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: plum;
+
+}
+
+#homepage {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 20% 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: plum;
+}
+  
+.local-menu {
+    grid-area: nav;
+    background-color: pink;
+}
+.local-menu ul {
+    list-style: none;
+}
+  
+main {
+    grid-area: main;
+    background-color:pink;
+    border-left: 1px solid black;
+    padding-left: 1rem;
+}
+  
+footer {
+    grid-area: footer;
+    background-color: plum;
+    padding: 1rem 0rem;
+    padding-left: 1rem;
+}
+.local-menu ul {
+    padding-left: 1rem;
+}
+.local-menu ul li {
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+    padding-left: 0.5rem;
+}
+.local-menu ul li:hover {
+    background-color: plum;
+    cursor: pointer
+}
+.menu li{
+    padding: 1rem 1rem;
+}
+.menu li:hover {
+    background-color: rebeccapurple;
+    cursor: pointer;
+}
+.menu li:hover a{
+    color: white
+}
